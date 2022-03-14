@@ -7,7 +7,7 @@ package com.zt1994;
 public class Hello {
 
 	public void sayHello() {
-		System.out.println("Hello, zhangfengxian");
+		System.out.println("Hello, zt1994");
 	}
 
 }
