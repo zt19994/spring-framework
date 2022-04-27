@@ -27,16 +27,21 @@ import org.springframework.lang.Nullable;
  * Central interface to provide configuration for an application.
  * This is read-only while the application is running, but may be
  * reloaded if the implementation supports this.
+ * 为应用程序提供配置的中心接口。这在应用程序运行时是只读的，但是也可以重新加载，如果实现支持的话。
  *
  * <p>An ApplicationContext provides:
  * <ul>
  * <li>Bean factory methods for accessing application components.
+ * 用于访问应用程序组件的Bean工厂方法。
  * Inherited from {@link org.springframework.beans.factory.ListableBeanFactory}.
  * <li>The ability to load file resources in a generic fashion.
+ * 以通用方式加载文件资源的能力。
  * Inherited from the {@link org.springframework.core.io.ResourceLoader} interface.
  * <li>The ability to publish events to registered listeners.
+ * 向注册监听器发布事件的能力。
  * Inherited from the {@link ApplicationEventPublisher} interface.
  * <li>The ability to resolve messages, supporting internationalization.
+ * 解析消息的能力，支持国际化。
  * Inherited from the {@link MessageSource} interface.
  * <li>Inheritance from a parent context. Definitions in a descendant context
  * will always take priority. This means, for example, that a single parent
@@ -60,6 +65,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 
 	/**
 	 * Return the unique id of this application context.
+	 * 返回这个应用上下文的唯一id。
 	 * @return the unique id of the context, or {@code null} if none
 	 */
 	@Nullable
@@ -67,18 +73,21 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 
 	/**
 	 * Return a name for the deployed application that this context belongs to.
+	 * 返回此上下文所属的已部署应用程序的名称。
 	 * @return a name for the deployed application, or the empty String by default
 	 */
 	String getApplicationName();
 
 	/**
 	 * Return a friendly name for this context.
+	 * 为该上下文返回一个友好的名称。
 	 * @return a display name for this context (never {@code null})
 	 */
 	String getDisplayName();
 
 	/**
 	 * Return the timestamp when this context was first loaded.
+	 * 返回该上下文首次加载时的时间戳。
 	 * @return the timestamp (ms) when this context was first loaded
 	 */
 	long getStartupDate();
@@ -86,6 +95,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 	/**
 	 * Return the parent context, or {@code null} if there is no parent
 	 * and this is the root of the context hierarchy.
+	 * 返回父类上下文，如果没有则是上下文的根节点层级
 	 * @return the parent context, or {@code null} if there is no parent
 	 */
 	@Nullable
@@ -93,6 +103,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 
 	/**
 	 * Expose AutowireCapableBeanFactory functionality for this context.
+	 * 获取该上下文的AutowireCapableBeanFactory。
 	 * <p>This is not typically used by application code, except for the purpose of
 	 * initializing bean instances that live outside of the application context,
 	 * applying the Spring bean lifecycle (fully or partly) to them.
