@@ -11,8 +11,11 @@ public class MyApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-		Hello hello = (Hello)ac.getBean("hello");
+		Hello hello = (Hello) ac.getBean("hello");
 		hello.sayHello();
+
+		Book book = (Book) ac.getBean("book");
+		book.readBook();
 	}
 
 }

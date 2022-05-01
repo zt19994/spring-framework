@@ -3,6 +3,17 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!--配置hello对象创建-->
 	<bean id="hello" class="com.zt1994.Hello"></bean>
+
+	<!--使用set方法进行属性注入-->
+	<bean id="book" class="com.zt1994.Book">
+		<!--使用property完成属性注入
+			name：类里面属性名称
+			value：向属性注入的值
+		-->
+		<!--<property name="name" value="zt1994"/>-->
+	</bean>
+
 
 </beans>
