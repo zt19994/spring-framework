@@ -27,7 +27,7 @@ public class Book {
 	}
 
 	public void readBook() {
-		System.out.println("read, " + name);
+		System.out.println("read, " + name + ", author:" + author);
 	}
 
 }

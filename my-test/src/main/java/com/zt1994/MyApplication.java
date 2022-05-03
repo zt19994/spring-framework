@@ -17,8 +17,8 @@ public class MyApplication {
 		Book book = (Book) ac.getBean("book");
 		book.readBook();
 
-		Book book1 = (Book) ac.getBean("book1");
-		book1.readBook();
+		/*Book book1 = (Book) ac.getBean("book1");
+		book1.readBook();*/
 
 		Order order = (Order) ac.getBean("order");
 		order.addOrder();

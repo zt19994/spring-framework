@@ -14,11 +14,22 @@
 			value：向属性注入的值
 		-->
 		<property name="name" value="zt1994"/>
+		<!--设置null值-->
+		<!--<property name="author">
+			<null/>
+		</property>-->
+		<!--设置熟悉为特殊符号
+			1 把<>进行转义
+			2 把带有特殊符号的内容写到CDATA: <![CDATA[]]]>
+		-->
+		<property name="author">
+			<value><![CDATA[<<23333>>]]></value>
+		</property>
 	</bean>
 
 	<!--使用p命名空间进行属性注入-->
-	<bean id="book1" class="com.zt1994.Book" p:name="zt19941" p:author="zt">
-	</bean>
+	<!--<bean id="book1" class="com.zt1994.Book" p:name="zt19941" p:author="zt">
+	</bean>-->
 
 
 	<!--使用有参构造进行属性注入-->
