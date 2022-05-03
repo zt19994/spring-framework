@@ -16,6 +16,9 @@ public class MyApplication {
 
 		Book book = (Book) ac.getBean("book");
 		book.readBook();
+
+		Order order = (Order) ac.getBean("order");
+		order.addOrder();
 	}
 
 }

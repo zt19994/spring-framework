@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:p="http://www.springframework.org/schema/p"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!--配置hello对象创建-->
@@ -15,5 +16,15 @@
 		<property name="name" value="zt1994"/>
 	</bean>
 
+	<!--使用p命名空间进行属性注入-->
+	<bean id="book1" class="com.zt1994.Book">
+	</bean>
+
+
+	<!--使用有参构造进行属性注入-->
+	<bean id="order" class="com.zt1994.Order">
+		<constructor-arg name="orderName" value="book"/>
+		<constructor-arg name="address" value="chengdu"/>
+	</bean>
 
 </beans>
