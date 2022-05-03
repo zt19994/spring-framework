@@ -17,7 +17,7 @@
 	</bean>
 
 	<!--使用p命名空间进行属性注入-->
-	<bean id="book1" class="com.zt1994.Book">
+	<bean id="book1" class="com.zt1994.Book" p:name="zt19941" p:author="zt">
 	</bean>
 
 
