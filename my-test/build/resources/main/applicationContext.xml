@@ -31,11 +31,20 @@
 	<!--<bean id="book1" class="com.zt1994.Book" p:name="zt19941" p:author="zt">
 	</bean>-->
 
-
 	<!--使用有参构造进行属性注入-->
 	<bean id="order" class="com.zt1994.Order">
 		<constructor-arg name="orderName" value="book"/>
 		<constructor-arg name="address" value="chengdu"/>
 	</bean>
+
+	<!--创建service和dao-->
+	<bean id="userService" class="com.zt1994.service.UserService">
+		<!--注入userDao对象
+			name属性：类里面属性名称
+			ref属性：创建userDao对象bean标签id值
+		-->
+		<property name="userDao" ref="userDaoImpl"/>
+	</bean>
+	<bean id="userDaoImpl" class="com.zt1994.dao.UserDaoImpl"></bean>
 
 </beans>

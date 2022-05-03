@@ -1,5 +1,6 @@
 package com.zt1994;
 
+import com.zt1994.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,6 +23,9 @@ public class MyApplication {
 
 		Order order = (Order) ac.getBean("order");
 		order.addOrder();
+
+		UserService userService = (UserService) ac.getBean("userService");
+		userService.add();
 	}
 
 }
