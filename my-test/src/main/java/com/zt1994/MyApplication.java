@@ -1,5 +1,6 @@
 package com.zt1994;
 
+import com.zt1994.bean.Emp;
 import com.zt1994.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -26,6 +27,10 @@ public class MyApplication {
 
 		UserService userService = (UserService) ac.getBean("userService");
 		userService.add();
+
+		Emp emp = ac.getBean("emp", Emp.class);
+		emp.add();
+
 	}
 
 }

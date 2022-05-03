@@ -47,4 +47,17 @@
 	</bean>
 	<bean id="userDaoImpl" class="com.zt1994.dao.UserDaoImpl"></bean>
 
+	<!--内部bean-->
+	<bean id="emp" class="com.zt1994.bean.Emp">
+		<!--设置两个普通属性-->
+		<property name="empName" value="zt"/>
+		<property name="gender" value="man"/>
+		<!--设置对象类型属性-->
+		<property name="dept">
+			<bean id="dept" class="com.zt1994.bean.Dept">
+				<property name="deptName" value="IT"></property>
+			</bean>
+		</property>
+	</bean>
+
 </beans>

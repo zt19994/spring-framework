@@ -8,7 +8,11 @@ com/zt1994/dao/UserDaoImpl.java
  com.zt1994.dao.UserDaoImpl
 com/zt1994/dao/UserDao.java
  com.zt1994.dao.UserDao
-com/zt1994/MyApplication.java
- com.zt1994.MyApplication
 com/zt1994/service/UserService.java
  com.zt1994.service.UserService
+com/zt1994/bean/Dept.java
+ com.zt1994.bean.Dept
+com/zt1994/bean/Emp.java
+ com.zt1994.bean.Emp
+com/zt1994/MyApplication.java
+ com.zt1994.MyApplication
