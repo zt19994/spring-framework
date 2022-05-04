@@ -30,3 +30,9 @@ com/zt1994/service/UserService.java
  com.zt1994.service.UserService
 com/zt1994/Book.java
  com.zt1994.Book
+com/zt1994/autowire/Dept.java
+ com.zt1994.autowire.Dept
+com/zt1994/autowire/Emp.java
+ com.zt1994.autowire.Emp
+com/zt1994/test/AutowireBeanTest.java
+ com.zt1994.test.AutowireBeanTest
