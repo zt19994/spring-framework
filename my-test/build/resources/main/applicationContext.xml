@@ -47,17 +47,54 @@
 	</bean>
 	<bean id="userDaoImpl" class="com.zt1994.dao.UserDaoImpl"></bean>
 
-	<!--内部bean-->
+	<!--内部bean和级联赋值-->
 	<bean id="emp" class="com.zt1994.bean.Emp">
 		<!--设置两个普通属性-->
 		<property name="empName" value="zt"/>
 		<property name="gender" value="man"/>
 		<!--设置对象类型属性-->
-		<property name="dept">
+		<!--<property name="dept">
 			<bean id="dept" class="com.zt1994.bean.Dept">
 				<property name="deptName" value="IT"></property>
 			</bean>
-		</property>
+		</property>-->
+		<!--级联赋值-->
+		<property name="dept" ref="dept"></property>
+		<property name="dept.deptName" value="TEST"></property>
+	</bean>
+	<bean id="dept" class="com.zt1994.bean.Dept">
+		<property name="deptName" value="IT"></property>
 	</bean>
 
+	<!--集合类型属性注入-->
+	<bean id="stu" class="com.zt1994.collectiontype.Stu">
+		<!--数组类型属性注入-->
+		<property name="courses">
+			<array>
+				<value>java</value>
+				<value>Mysql</value>
+			</array>
+		</property>
+		<!--list类型属性注入-->
+		<property name="list">
+			<list>
+				<value>test1</value>
+				<value>test2</value>
+			</list>
+		</property>
+		<!--map类型属性注入-->
+		<property name="maps">
+			<map>
+				<entry key="JAVA" value="java"/>
+				<entry key="PHP" value="php"/>
+			</map>
+		</property>
+		<!--set类型属性注入-->
+		<property name="sets">
+			<set>
+				<value>Mysql</value>
+				<value>Redis</value>
+			</set>
+		</property>
+	</bean>
 </beans>

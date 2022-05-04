@@ -1,6 +1,7 @@
 package com.zt1994;
 
 import com.zt1994.bean.Emp;
+import com.zt1994.collectiontype.Stu;
 import com.zt1994.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -30,6 +31,9 @@ public class MyApplication {
 
 		Emp emp = ac.getBean("emp", Emp.class);
 		emp.add();
+
+		Stu stu = ac.getBean("stu", Stu.class);
+		stu.test();
 
 	}
 

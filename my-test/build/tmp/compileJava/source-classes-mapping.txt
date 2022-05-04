@@ -14,5 +14,7 @@ com/zt1994/bean/Dept.java
  com.zt1994.bean.Dept
 com/zt1994/bean/Emp.java
  com.zt1994.bean.Emp
+com/zt1994/collectiontype/Stu.java
+ com.zt1994.collectiontype.Stu
 com/zt1994/MyApplication.java
  com.zt1994.MyApplication
