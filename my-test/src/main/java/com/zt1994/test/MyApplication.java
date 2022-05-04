@@ -1,5 +1,8 @@
-package com.zt1994;
+package com.zt1994.test;
 
+import com.zt1994.Book;
+import com.zt1994.Hello;
+import com.zt1994.Order;
 import com.zt1994.bean.Emp;
 import com.zt1994.collectiontype.Course;
 import com.zt1994.collectiontype.ReadBook;

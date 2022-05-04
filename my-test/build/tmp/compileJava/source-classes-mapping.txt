@@ -16,8 +16,8 @@ com/zt1994/bean/Dept.java
  com.zt1994.bean.Dept
 com/zt1994/bean/MyBeanPost.java
  com.zt1994.bean.MyBeanPost
-com/zt1994/MyApplication.java
- com.zt1994.MyApplication
+com/zt1994/test/AutowireBeanTest.java
+ com.zt1994.test.AutowireBeanTest
 com/zt1994/Hello.java
  com.zt1994.Hello
 com/zt1994/bean/Orders.java
@@ -34,5 +34,5 @@ com/zt1994/autowire/Dept.java
  com.zt1994.autowire.Dept
 com/zt1994/autowire/Emp.java
  com.zt1994.autowire.Emp
-com/zt1994/test/AutowireBeanTest.java
- com.zt1994.test.AutowireBeanTest
+com/zt1994/test/MyApplication.java
+ com.zt1994.test.MyApplication

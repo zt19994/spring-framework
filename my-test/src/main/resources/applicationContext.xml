@@ -3,8 +3,10 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xmlns:p="http://www.springframework.org/schema/p"
 	   xmlns:util="http://www.springframework.org/schema/util"
+	   xmlns:context="http://www.springframework.org/schema/context"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-	   					   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	   					   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+						   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!--配置hello对象创建-->
 	<bean id="hello" class="com.zt1994.Hello"></bean>
@@ -117,7 +119,7 @@
 
 	<!--提取list集合类型-->
 	<util:list id="bookList">
-		<value>test1</value>
+		<value>${test.name}</value>
 		<value>test2</value>
 		<value>test3</value>
 	</util:list>
@@ -129,4 +131,7 @@
 
 	<!--factoryBean实现-->
 	<bean id="myBean" class="com.zt1994.facbean.MyBean"></bean>
+
+	<!--引入外部属性文件-->
+	<context:property-placeholder location="classpath:test.properties"/>
 </beans>
