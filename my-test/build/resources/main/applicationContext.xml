@@ -126,4 +126,7 @@
 	<bean id="readBook" class="com.zt1994.collectiontype.ReadBook">
 		<property name="list" ref="bookList"/>
 	</bean>
+
+	<!--factoryBean实现-->
+	<bean id="myBean" class="com.zt1994.facbean.MyBean"></bean>
 </beans>

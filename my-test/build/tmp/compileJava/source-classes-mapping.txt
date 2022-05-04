@@ -20,5 +20,7 @@ com/zt1994/collectiontype/Stu.java
  com.zt1994.collectiontype.Stu
 com/zt1994/collectiontype/ReadBook.java
  com.zt1994.collectiontype.ReadBook
+com/zt1994/facbean/MyBean.java
+ com.zt1994.facbean.MyBean
 com/zt1994/MyApplication.java
  com.zt1994.MyApplication

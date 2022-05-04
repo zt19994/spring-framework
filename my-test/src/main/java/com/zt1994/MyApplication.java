@@ -1,8 +1,10 @@
 package com.zt1994;
 
 import com.zt1994.bean.Emp;
+import com.zt1994.collectiontype.Course;
 import com.zt1994.collectiontype.ReadBook;
 import com.zt1994.collectiontype.Stu;
+import com.zt1994.facbean.MyBean;
 import com.zt1994.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -38,6 +40,9 @@ public class MyApplication {
 
 		ReadBook readBook = ac.getBean("readBook", ReadBook.class);
 		readBook.test();
+
+		Course myBean = ac.getBean("myBean", Course.class);
+		System.out.println(myBean);
 
 	}
 
