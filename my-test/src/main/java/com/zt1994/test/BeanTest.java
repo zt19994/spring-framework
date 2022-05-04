@@ -11,8 +11,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanTest {
 
 	public static void main(String[] args) {
-		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:applicationContextBean.xml");
 		Orders orders = ac.getBean("orders", Orders.class);
+
 		System.out.println("第四步 获取创建bean实例对象");
 		System.out.println(orders);
 		// 手动让orders bean实例销毁

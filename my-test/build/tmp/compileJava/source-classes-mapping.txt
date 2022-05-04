@@ -1,17 +1,9 @@
-com/zt1994/Order.java
- com.zt1994.Order
-com/zt1994/Hello.java
- com.zt1994.Hello
-com/zt1994/Book.java
- com.zt1994.Book
 com/zt1994/dao/UserDaoImpl.java
  com.zt1994.dao.UserDaoImpl
+com/zt1994/Order.java
+ com.zt1994.Order
 com/zt1994/dao/UserDao.java
  com.zt1994.dao.UserDao
-com/zt1994/service/UserService.java
- com.zt1994.service.UserService
-com/zt1994/bean/Dept.java
- com.zt1994.bean.Dept
 com/zt1994/bean/Emp.java
  com.zt1994.bean.Emp
 com/zt1994/collectiontype/Course.java
@@ -20,13 +12,21 @@ com/zt1994/collectiontype/Stu.java
  com.zt1994.collectiontype.Stu
 com/zt1994/collectiontype/ReadBook.java
  com.zt1994.collectiontype.ReadBook
-com/zt1994/facbean/MyBean.java
- com.zt1994.facbean.MyBean
-com/zt1994/MyApplication.java
- com.zt1994.MyApplication
-com/zt1994/bean/Orders.java
- com.zt1994.bean.Orders
-com/zt1994/test/BeanTest.java
- com.zt1994.test.BeanTest
+com/zt1994/bean/Dept.java
+ com.zt1994.bean.Dept
 com/zt1994/bean/MyBeanPost.java
  com.zt1994.bean.MyBeanPost
+com/zt1994/MyApplication.java
+ com.zt1994.MyApplication
+com/zt1994/Hello.java
+ com.zt1994.Hello
+com/zt1994/bean/Orders.java
+ com.zt1994.bean.Orders
+com/zt1994/facbean/MyBean.java
+ com.zt1994.facbean.MyBean
+com/zt1994/test/BeanTest.java
+ com.zt1994.test.BeanTest
+com/zt1994/service/UserService.java
+ com.zt1994.service.UserService
+com/zt1994/Book.java
+ com.zt1994.Book
