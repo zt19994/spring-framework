@@ -24,3 +24,9 @@ com/zt1994/facbean/MyBean.java
  com.zt1994.facbean.MyBean
 com/zt1994/MyApplication.java
  com.zt1994.MyApplication
+com/zt1994/bean/Orders.java
+ com.zt1994.bean.Orders
+com/zt1994/test/BeanTest.java
+ com.zt1994.test.BeanTest
+com/zt1994/bean/MyBeanPost.java
+ com.zt1994.bean.MyBeanPost
