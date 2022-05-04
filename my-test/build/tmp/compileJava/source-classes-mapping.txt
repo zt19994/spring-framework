@@ -36,6 +36,12 @@ com/zt1994/autowire/Emp.java
  com.zt1994.autowire.Emp
 com/zt1994/test/MyApplication.java
  com.zt1994.test.MyApplication
+com/zt1994/dao/PersonDao1Impl.java
+ com.zt1994.dao.PersonDao1Impl
+com/zt1994/dao/PersonDao.java
+ com.zt1994.dao.PersonDao
+com/zt1994/dao/PersonDaoImpl.java
+ com.zt1994.dao.PersonDaoImpl
 com/zt1994/service/PersonService.java
  com.zt1994.service.PersonService
 com/zt1994/test/ApplicationTest.java

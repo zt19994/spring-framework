@@ -1,6 +1,9 @@
 package com.zt1994.service;
 
-import org.springframework.stereotype.Component;
+import com.zt1994.dao.PersonDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 /**
  * 在注解里面value属性值可以省略不写
@@ -9,10 +12,18 @@ import org.springframework.stereotype.Component;
  * @author zhongtao
  * @date 2022/5/4 16:37
  */
-@Component(value = "personService")
+@Service
 public class PersonService {
+
+	/**
+	 * @Autowired 根据属性类型进行自动装配
+	 */
+	@Autowired
+	@Qualifier(value = "personDao1Impl")
+	private PersonDao personDao;
 
 	public void add() {
 		System.out.println("Service add");
+		personDao.add();
 	}
 }
