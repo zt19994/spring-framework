@@ -114,4 +114,16 @@
 	<bean id="course2" class="com.zt1994.collectiontype.Course">
 		<property name="courseName" value="redis"/>
 	</bean>
+
+	<!--提取list集合类型-->
+	<util:list id="bookList">
+		<value>test1</value>
+		<value>test2</value>
+		<value>test3</value>
+	</util:list>
+
+	<!--提取list集合类型属性注入使用-->
+	<bean id="readBook" class="com.zt1994.collectiontype.ReadBook">
+		<property name="list" ref="bookList"/>
+	</bean>
 </beans>
