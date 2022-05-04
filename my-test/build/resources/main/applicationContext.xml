@@ -96,5 +96,20 @@
 				<value>Redis</value>
 			</set>
 		</property>
+		<!--注入list集合，对象类型-->
+		<property name="courseList">
+			<list>
+				<ref bean="course1"/>
+				<ref bean="course2"/>
+			</list>
+		</property>
+	</bean>
+
+	<!--创建多个course对象-->
+	<bean id="course1" class="com.zt1994.collectiontype.Course">
+		<property name="courseName" value="spring5"/>
+	</bean>
+	<bean id="course2" class="com.zt1994.collectiontype.Course">
+		<property name="courseName" value="redis"/>
 	</bean>
 </beans>
