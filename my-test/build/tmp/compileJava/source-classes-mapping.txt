@@ -46,3 +46,7 @@ com/zt1994/service/PersonService.java
  com.zt1994.service.PersonService
 com/zt1994/test/ApplicationTest.java
  com.zt1994.test.ApplicationTest
+com/zt1994/config/SpringConfig.java
+ com.zt1994.config.SpringConfig
+com/zt1994/test/ApplicationConfigTest.java
+ com.zt1994.test.ApplicationConfigTest
