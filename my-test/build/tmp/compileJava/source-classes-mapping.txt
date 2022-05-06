@@ -1,9 +1,9 @@
-com/zt1994/dao/UserDaoImpl.java
- com.zt1994.dao.UserDaoImpl
+com/zt1994/service/PersonService.java
+ com.zt1994.service.PersonService
 com/zt1994/Order.java
  com.zt1994.Order
-com/zt1994/dao/UserDao.java
- com.zt1994.dao.UserDao
+com/zt1994/test/ApplicationTest.java
+ com.zt1994.test.ApplicationTest
 com/zt1994/bean/Emp.java
  com.zt1994.bean.Emp
 com/zt1994/collectiontype/Course.java
@@ -26,8 +26,8 @@ com/zt1994/facbean/MyBean.java
  com.zt1994.facbean.MyBean
 com/zt1994/test/BeanTest.java
  com.zt1994.test.BeanTest
-com/zt1994/service/UserService.java
- com.zt1994.service.UserService
+com/zt1994/dao/PersonDaoImpl.java
+ com.zt1994.dao.PersonDaoImpl
 com/zt1994/Book.java
  com.zt1994.Book
 com/zt1994/autowire/Dept.java
@@ -40,13 +40,16 @@ com/zt1994/dao/PersonDao1Impl.java
  com.zt1994.dao.PersonDao1Impl
 com/zt1994/dao/PersonDao.java
  com.zt1994.dao.PersonDao
-com/zt1994/dao/PersonDaoImpl.java
- com.zt1994.dao.PersonDaoImpl
-com/zt1994/service/PersonService.java
- com.zt1994.service.PersonService
-com/zt1994/test/ApplicationTest.java
- com.zt1994.test.ApplicationTest
+com/zt1994/dao/UserDaoImpl.java
+ com.zt1994.dao.UserDaoImpl
+com/zt1994/service/UserService.java
+ com.zt1994.service.UserService
+com/zt1994/dao/UserDao.java
+ com.zt1994.dao.UserDao
 com/zt1994/config/SpringConfig.java
  com.zt1994.config.SpringConfig
 com/zt1994/test/ApplicationConfigTest.java
  com.zt1994.test.ApplicationConfigTest
+com/zt1994/test/JDKProxy.java
+ com.zt1994.test.JDKProxy
+ com.zt1994.test.UserDaoProxy

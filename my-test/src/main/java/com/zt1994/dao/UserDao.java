@@ -12,4 +12,13 @@ public interface UserDao {
 	 * 更新user
 	 */
 	void update();
+
+	/**
+	 * add
+	 *
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	int add(int a, int b);
 }
